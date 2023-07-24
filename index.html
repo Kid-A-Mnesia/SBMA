@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="app.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <title>Santa Barbara Museum of Art</title>
+  </head>
+  <body>
+    <nav class="top">
+      <div id="myNavbar" class="bar">
+        <a
+          class="bar-item button hover-black hide-medium hide-large right"
+          href="javascript:void(0);"
+          onclick="toggleFunction()"
+          title="Toggle Navigation Menu"
+        >
+          <!--<i class="fa fa-bars"></i>-->
+        </a>
+        <div class="logo">
+          <a href="#home" class="bar-item button bar-logo">
+            <img src="/img/logo.jpg" alt="logo" width="150px" />
+          </a>
+        </div>
+        <div class="menu-items">
+          <a href="#" class="bar-item button hide-small bar-menu dropbtn">VISIT</a>
+
+          <a href="#about" class="bar-item button hide-small bar-menu"
+            >EVENTS</a
+          >
+          <a href="#portfolio" class="bar-item button hide-small bar-menu"
+            >EXHIBITIONS</a
+          >
+          
+          <a href="#collection" class="bar-item button hide-small bar-menu"
+            >COLLECTIONS</a
+          >
+          <a href="#" class="bar-item button hide-small bar-menu">LEARN</a>
+        </div>
+      </div>
+
+      <!-- Navbar on small screens -->
+      <div id="hamburger" class="bar-block white hide hide-large hide-medium">
+        <a href="#about" class="bar-item button" onclick="toggleFunction()"
+          >ABOUT</a
+        >
+        <a href="#portfolio" class="bar-item button" onclick="toggleFunction()"
+          >FEATURES</a
+        >
+        <a href="#contact" class="bar-item button" onclick="toggleFunction()"
+          >CONTACT</a
+        >
+        <a href="#" class="bar-item button">SEARCH</a>
+      </div>
+    </nav>
+
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg-1 display-container opacity-min" id="home">
+      <div class="display-middle">
+        <span class="xxlarge text-white wide"></span>
+      </div>
+    </div>
+
+    <!-- Container (About Section) -->
+    <div class="content container padding-64 center" id="about" class="events">
+      
+      <span class="xxlarge text-black wide">EVENTS</span>
+      <a href="#" class="bounce center">VIEW ALL</a>
+
+      <div class="flex-container">
+      <div class="slide">
+        <div class="title">Event 1</div>
+        <div class="card" data-tilt data-tilt-scale="1.1" data-tilt-max="5" >
+          <a href="#">
+          <img src="https://www.sbma.net/sites/default/files/image_featured/DevolderThumbnail.jpg" alt=""></a>
+          <p class = "event-name"><strong>The Artist’s Intent and the Paradox of Art Restoration</strong></p>
+          <p class="event-info">Art Matters Lecture with Bart Devolder</p>
+          <p class="event-date">Thursday, August 3, 2023</p>
+          <p class="event time">5:30 – 6:30 pm</p>
+          
+        </div>
+        <!-- <div>
+          <p><strong>The Artist’s Intent and the Paradox of Art Restoration</strong></p>
+          <p>Art Matters Lecture with Bart Devolder</p>
+          <p>Thursday, August 3, 2023</p>
+          <p>5:30 – 6:30 pm</p>
+        </div> -->
+      </div>
+      
+      <div class="slide">
+        <div class="title">Event 2</div>
+        <div class="card" data-tilt data-tilt-scale="1.1" data-tilt-max="5">
+          <a href="#">
+          <img src="https://www.sbma.net/sites/default/files/styles/square/public/image_featured/Thumbnail%20fab.jpg?itok=qX_vSyrL" alt=""></a>
+          <p class = "event-name"><strong>The Artist’s Intent and the Paradox of Art Restoration</strong></p>
+          <p class="event-info">Art Matters Lecture with Bart Devolder</p>
+          <p class="event-date">Thursday, August 3, 2023</p>
+          <p class="event time">5:30 – 6:30 pm</p>
+        </div>
+      </div>
+      
+      <div class="slide">
+        <div class="title">Event 3</div>
+        <div class="card" data-tilt data-tilt-scale="1.1" data-tilt-max="5">
+          <a href="#">
+          <img src="https://www.sbma.net/sites/default/files/styles/square/public/image_featured/Thumbnail%20fab.jpg?itok=qX_vSyrL" alt=""></a>
+          <p class = "event-name"><strong>The Artist’s Intent and the Paradox of Art Restoration</strong></p>
+          <p class="event-info">Art Matters Lecture with Bart Devolder</p>
+          <p class="event-date">Thursday, August 3, 2023</p>
+          <p class="event time">5:30 – 6:30 pm</p>
+        </div>
+
+        
+      </div>
+    </div>
+      
+
+      <!-- <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.
+      </p> -->
+      
+      
+      <!-- <div class="row">
+        <div class="col m6 center padding-large">
+          <img
+            src="https://www.sbma.net/sites/default/files/image/reopen-new.jpg"
+            class="round image opacity hover-opacity-off"
+            alt="Photo of Lea Lawrence"
+            width="500"
+            height="333"
+          />
+        </div> -->
+
+        <!-- Hide this text on small devices -->
+        <!-- <div class="col m6 hide-small padding-large">
+          <p>
+            Welcome to my website. I am lorem ipsum consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.
+          </p>
+        </div> -->
+      </div>
+    </div>
+
+    <!-- Second Parallax Image with Portfolio Text -->
+    <div class="bgimg-2 display-container opacity-min">
+      <div class="display-middle">
+        <span class="xxlarge text-black wide">EXHIBITIONS</span>
+      </div>
+    </div>
+
+    <!-- Container (Portfolio Section) -->
+    <div class="content container padding-64" id="portfolio">
+      <h3 class="center">EXHIBITIONS</h3>
+      <p class="center">
+        <em
+          >Here are some of my latest lorem work ipsum tipsum.<br />
+          Click on the images to make them bigger</em
+        >
+      </p>
+      <br />
+
+      <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+      <div class="row-padding center works">
+        <div class="col m3">
+          <img
+            src="https://www.sbma.net/sites/default/files/styles/square/public/image_featured/Thumbnail%20fab.jpg?itok=qX_vSyrL"
+            style="width: 100%; padding-bottom: 1rem;"
+            onclick="onClick(this)"
+            class="hover-opacity"
+            alt="First Cow"
+          />
+        </div>
+
+        <div class="col m3">
+          <img
+            src="https://www.sbma.net/sites/default/files/styles/square/public/image_featured/2021.19_Lagrimas_REF.jpg?itok=T5gX3nG4"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="hover-opacity"
+            alt="Documentary Now"
+          />
+        </div>
+
+        <div class="col m3">
+          <img
+            src="https://www.sbma.net/sites/default/files/styles/square/public/image_featured/Salmon%20Steak%201%20SS-p.jpg?itok=yoN-fgEB"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="hover-opacity"
+            alt="Trinkets"
+          />
+        </div>
+      </div>
+
+      <div class="row-padding center section works">
+        <div class="col m3">
+          <img
+            src="https://www.sbma.net/sites/default/files/styles/square/public/image_featured/cast31-thumbnail.jpg?itok=6Gwp-63j"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="hover-opacity"
+            alt="Shrill"
+          />
+        </div>
+
+        <div class="col m3">
+          <img
+            src="https://www.sbma.net/sites/default/files/styles/square/public/image_featured/Thumbnail%20S3.jpg?itok=CUfC2CUu"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="hover-opacity"
+            alt="Timmy Failure"
+          />
+        </div>
+
+        <div class="col m3">
+          <img
+            src="https://www.sbma.net/sites/default/files/styles/square/public/image_featured/Image%201_1944.1-Seated%20Luohan%20THUMB.jpg?itok=5PvYMl6X"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="hover-opacity"
+            alt="Pretty Little Liars: The Perfectionists"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="bgimg-3 display-container opacity-min">
+      <div class="display-middle">
+        <span class="xxlarge text-black wide">COLLECTIONS</span>
+      </div>
+    </div>
+
+    <!-- Container (Portfolio Section) -->
+    <div class="content container padding-64" id="collection">
+      <h3 class="center">COLLECTIONS</h3>
+      <p class="center">
+        <em
+          >Here are some of my latest lorem work ipsum tipsum.<br />
+          Click on the images to make them bigger</em
+        >
+      </p>
+      <br />
+
+      <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+      <div class="row-padding center works">
+        <div class="col m3">
+          <img
+            src="/img/goldie.jpg"
+            style="width: 100%;"
+            onclick="onClick(this)"
+            class="hover-opacity"
+            alt="First Cow"
+          />
+        </div>
+
+        <div class="col m3">
+          <img
+            src="/img/head.jpg"
+            style="width: 100%;"
+            onclick="onClick(this)"
+            class="hover-opacity"
+            alt="Documentary Now"
+          />
+        </div>
+
+        <div class="col m3">
+          <img
+            src="/img/melty.jpg"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="hover-opacity"
+            alt="Trinkets"
+          />
+        </div>
+      </div>
+
+      <div class="row-padding center section works">
+        <div class="col m3">
+          <img
+            src="https://www.sbma.net/sites/default/files/styles/square/public/image_featured/cast31-thumbnail.jpg?itok=6Gwp-63j"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="hover-opacity"
+            alt="Shrill"
+          />
+        </div>
+
+        <div class="col m3">
+          <img
+            src="https://www.sbma.net/sites/default/files/styles/square/public/image_featured/Thumbnail%20S3.jpg?itok=CUfC2CUu"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="hover-opacity"
+            alt="Timmy Failure"
+          />
+        </div>
+
+        <div class="col m3">
+          <img
+            src="https://www.sbma.net/sites/default/files/styles/square/public/image_featured/Image%201_1944.1-Seated%20Luohan%20THUMB.jpg?itok=5PvYMl6X"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="hover-opacity"
+            alt="Pretty Little Liars: The Perfectionists"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="modal black" onclick="this.style.display='none'">
+      <span
+        class="button large black display-topright"
+        title="Close Modal Image"
+        ><i class="fa fa-remove"></i
+      ></span>
+      <div class="modal-content animate-zoom center transparent padding-64">
+        <img id="img01" class="image" />
+        <p id="caption" class="opacity large"></p>
+      </div>
+    </div>
+
+    
+
+    <!-- Third Parallax Image with Portfolio Text -->
+    <div class="bgimg-4 display-container opacity-min">
+      <div class="display-middle">
+        <span class="xxlarge text-black wide">CONTACT</span>
+      </div>
+    </div>
+
+    <!-- Container (Contact Section) -->
+    <div class="content container padding-64" id="contact">
+      <h3 class="center">WHERE I WORK</h3>
+      <p class="center"><em>Placeholder Text</em></p>
+
+      <div class="row padding-32 section">
+        <div class="col m4 container">
+          <img
+            src="Media/Portland.jpg"
+            class="image round"
+            style="width: 100%"
+          />
+        </div>
+        <div class="col m8 panel">
+          <div class="large margin-bottom">
+            <i
+              class="fa fa-map-marker fa-fw hover-text-black xlarge margin-right"
+            ></i>
+            Portland, US<br />
+            <i
+              class="fa fa-phone fa-fw hover-text-black xlarge margin-right"
+            ></i>
+            Phone: 805-453-5445<br />
+            <i
+              class="fa fa-envelope fa-fw hover-text-black xlarge margin-right"
+            ></i>
+            Email: rrivera1215@gmail.com<br />
+          </div>
+          <p>Contact Me:</p>
+          <form
+            method="post"
+            action="mailto:rrivera1215@gmail.com"
+            enctype="text/plain"
+          >
+            <div class="row-padding" style="margin: 0 -16px 8px -16px">
+              <div class="half">
+                <input
+                  class="input border"
+                  type="text"
+                  placeholder="Name"
+                  required
+                  name="Name"
+                />
+              </div>
+              <div class="half">
+                <input
+                  class="input border"
+                  type="text"
+                  placeholder="Email"
+                  required
+                  name="Email"
+                />
+              </div>
+            </div>
+
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Message"
+              cols="30"
+              rows="5"
+              class="input border"
+            ></textarea>
+            <button class="button black right section" type="submit">
+              <i class="fa fa-paper-plane"></i> SEND MESSAGE
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="center black padding-64">
+      <a href="#home" class="button light-grey hover-opacity"
+        ><i class="fa fa-arrow-up margin-right"></i>To the top</a
+      >
+      <div class="xlarge section">
+        <a href="https://www.facebook.com/lea.lawrence.39" target="_blank"
+          ><i class="fab fa-facebook-square hover-opacity"></i
+        ></a>
+
+        <a href="https://www.instagram.com/lawrence_lea/?hl=en" target="_blank"
+          ><i class="fab fa-instagram hover-opacity"></i
+        ></a>
+
+        <a href="https://www.imdb.com/name/nm11566938/" target="_blank"
+          ><i class="fab fa-imdb hover-opacity"></i
+        ></a>
+      </div>
+
+      <a href="https://ricardorivera.netlify.app/" id="dsgnr"
+        >DS<span>G</span> NR\\DV<span>L</span>PR</a
+      >
+    </footer>
+
+    <script src="vanilla-tilt.js"></script>
+    <script src="app.js"></script>
+
+  </body>
+</html>
