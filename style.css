@@ -16,12 +16,11 @@
 
 html,
 body {
-  height: 100%;
+  max-height: 100%;
 }
 
 body {
   font-family: "IBM Plex Sans", sans-serif;
-  
 }
 
 #wrapper {
@@ -54,7 +53,7 @@ h3 {
 }
 
 .icon {
-  fill: var(--color-primary);
+  fill: black;
   width: 100%;
 }
 
@@ -80,9 +79,12 @@ h3 {
 
 .slider__controls {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   position: absolute;
-  top: calc(100% + 1rem);
+  /* top: calc(100% - 20rem); */
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   width: 100%;
 }
 .slider__controls .btn {
@@ -97,7 +99,7 @@ h3 {
   width: var(--size);
 }
 .slider__controls .btn:focus {
-  border-color: var(--color-focus);
+  border-color: black;
   outline: none;
 }
 .slider__controls .btn--previous > * {
@@ -105,7 +107,7 @@ h3 {
 }
 
 .slider {
-  --slide-size: 70vmin;
+  --slide-size: 800px;
   --slide-margin: 4vmin;
   height: var(--slide-size);
   margin: 0 auto;
@@ -216,6 +218,12 @@ h3 {
 
 .slide__headline {
   font-size: 8vmin;
+  font-weight: 600;
+  position: relative;
+}
+
+.slide__sub {
+  font-size: 4rem;
   font-weight: 600;
   position: relative;
 }

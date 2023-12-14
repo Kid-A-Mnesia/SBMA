@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:700|IBM+Plex+Sans:500&display=swap");
+
 /* Utilities */
 
 * {
@@ -9,7 +11,7 @@
 
 body,
 html {
-  font-family: "Lato", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   height: 100%;
   color: #777;
   line-height: 1.8;
@@ -23,11 +25,11 @@ html {
   width: 100%;
 }
 
-.slide img {
+.slide_events img {
   width: 480px;
 }
 
-.slide {
+.slide_events {
   width: 960px;
   height: 700px;
   text-align: center;
@@ -58,7 +60,7 @@ html {
 .content {
   margin-left: auto;
   margin-right: auto;
-  max-width: 980px;
+  max-width: 100vw;
 }
 
 a {
@@ -443,7 +445,6 @@ nav {
 .show {
   display: block !important;
 }
-
 
 /* WORKS */
 .works {

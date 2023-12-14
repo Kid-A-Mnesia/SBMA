@@ -1,29 +1,44 @@
 const slideData = [
   {
     index: 0,
-    headline: "New Fashion Apparel",
-    button: "Shop now",
+    headline: "VISIONARY $25,000",
+    button: "SELECT SPONSORSHIP",
     src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/fashion.jpg",
   },
 
   {
     index: 1,
-    headline: "In The Wilderness",
-    button: "Book travel",
+    headline: "BENEFACTOR $10,000",
+    button: "SELECT SPONSORSHIP",
     src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/forest.jpg",
   },
 
   {
     index: 2,
-    headline: "For Your Current Mood",
-    button: "Listen",
+    headline: "SUSTAINER $5,000",
+    button: "SELECT SPONSORSHIP",
     src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/guitar.jpg",
   },
 
   {
     index: 3,
-    headline: "Focus On The Writing",
-    button: "Get Focused",
+    headline: "COLLECTOR $2,500",
+    button: "SELECT SPONSORSHIP",
+    src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/typewriter.jpg",
+  },
+
+  {
+    index: 4,
+    headline: "SUPPORTER $1,000",
+    button: "SELECT SPONSORSHIP",
+    src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/typewriter.jpg",
+  },
+
+  {
+    index: 5,
+    headline: "MAKE A DONATION",
+    sub: "YOUR CHOICE",
+    button: "SELECT SPONSORSHIP",
     src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/typewriter.jpg",
   },
 ];
@@ -71,7 +86,7 @@ class Slide extends React.Component {
   }
 
   render() {
-    const { src, button, headline, index } = this.props.slide;
+    const { src, button, headline, sub, index } = this.props.slide;
     const current = this.props.current;
     let classNames = "slide";
 
@@ -107,6 +122,11 @@ class Slide extends React.Component {
           "h2",
           { className: "slide__headline" },
           headline
+        ) /*#__PURE__*/,
+        React.createElement(
+          "h3",
+          { className: "slide__sub" },
+          sub
         ) /*#__PURE__*/,
         React.createElement(
           "button",
